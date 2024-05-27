@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #0c0a2e;
+  overflow: hidden;
+}
+nav ul li {
+  float: left;
+}
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  background-color: #555;
+}
+.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2f2997;
+  background-color: #0c0a2e;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/*FOOTER*/
+.pie-pagina{
+  background-color: #d2b68a;
+  
+}
+.pie-pagina .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:20px;
+  padding: 25px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-pagina .grupo-1 .bloque h2{
+  color: #222d52;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.pie-pagina .grupo-1 .bloque p{
+  color: #222d52;
+  margin-bottom: 5px; 
+  font-size: 14px; 
+}
+
+.fa-brands{
+  border-radius: 100px;
+  color: #222d52;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 10px;
+  
+}
+
+.fa-brands:hover {
+  color: #F1FADA;
+}
+
+
+.pie-pagina .grupo-2{
+  background-color: #222d52;
+  padding: 10px ;
+  text-align: center;
+  color: #fff;
+}
+
+.pie-pagina .grupo-1 .contacto {
+  background-color: #d2b68a;
+  text-align: left; 
+  color: #222d52;
+  padding: 10px 3px;
+}
+
+.pie-pagina .grupo-1 .contacto h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .pie-pagina .grupo-1 {
+      grid-template-columns: 1fr; 
+  }
+  
+  .fa-brands {
+      font-size: 24px; 
+  }
+  
+  .pie-pagina .grupo-1 .contacto {
+      text-align: center; 
+  }
+}
